@@ -22,4 +22,4 @@ For a 64 bit machine, the coomand would be as follows:
 ```bash
 $(PIN_HOME)/pin -t $(PIN_HOME)/source/tools/pintools/obj-intel64/<tool-name>.so -- <path_to_app>
 ```
-
+After completion of execution, you can find the results in ```<tool-name>.out``` file in your current working directory.
