@@ -395,7 +395,7 @@ VOID Instruction(INS ins, VOID *v)
         case XO(VMULPS):
         {
              uint32_t numOperands = INS_OperandCount(ins);
-             assert(numOperands == 2);
+             assert(numOperands == 3);
              assert(INS_OperandWritten(ins, 0));
              REG reg2 = INS_OperandReg(ins, 1);
              if(INS_OperandIsMemory(ins, 2))
@@ -412,7 +412,7 @@ VOID Instruction(INS ins, VOID *v)
         case XO(VMULPD): 
         {
              uint32_t numOperands = INS_OperandCount(ins);
-             assert(numOperands == 2);
+             assert(numOperands == 3);
              assert(INS_OperandWritten(ins, 0));
              REG reg2 = INS_OperandReg(ins, 1);
              if(INS_OperandIsMemory(ins, 2))
