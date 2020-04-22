@@ -32,6 +32,8 @@ ofstream OutFile;
 static UINT64 fpmulinsncount = 0;
 static UINT64 mulregmemcount = 0;
 static UINT64 mulregregcount = 0;
+static UINT64 mulregmemcountp = 0;
+static UINT64 mulregregcountp = 0;
 
 // This function is called before every instruction is executed
 VOID regmemcounter( PIN_REGISTER* reg, ADDRINT addr, uint32_t size, bool isSP)
@@ -57,7 +59,7 @@ VOID regmemcounterp( PIN_REGISTER* reg, ADDRINT addr, uint32_t size, bool isSP)
 {
     fpmulinsncount++;
     mulregmemcount++;
-    
+    mulregmemcountp++;
     if (isSP)
     {
         FLT32 val;
@@ -97,6 +99,7 @@ VOID regregcounterp(PIN_REGISTER* reg1, PIN_REGISTER* reg2, bool isSP)
 {
     fpmulinsncount++;
     mulregregcount++;
+    mulregregcountp++;
     if(isSP)
     {
         for(unsigned int i=0; i < MAX_FLOATS_PER_PIN_REG; i++)
@@ -660,6 +663,8 @@ VOID Fini(INT32 code, VOID *v)
     OutFile << "#Floating Multiply Insns             : " << fpmulinsncount << endl;
     OutFile << "#Floating Multiply Insns (Mem Refs)  : " << mulregmemcount << endl;
     OutFile << "#Floating Multiply Insns (Only Regs) : " << mulregregcount << endl;
+    OutFile << "#Floating Multiply Insns (Mem Refs) P: " << mulregmemcountp << endl;
+    OutFile << "#Floating Multiply Insns (Only Regs)P: " << mulregregcountp << endl;
     OutFile.close();
 }
 
@@ -698,4 +703,3 @@ int main(int argc, char * argv[])
     
     return 0;
 }
-
