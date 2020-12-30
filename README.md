@@ -23,3 +23,7 @@ For a 64 bit machine, the coomand would be as follows:
 $(PIN_HOME)/pin -t $(PIN_HOME)/source/tools/pintools/obj-intel64/<tool-name>.so -- <path_to_app>
 ```
 After completion of execution, you can find the results in ```<tool-name>.out``` file in your current working directory.
+
+## List of Pintools
+- fpmov: Counts the number of floating point MOV instructions performed by a workload.
+- fpmul: Counts the number of floating point multiplications (single precision and double precision) performed by a workload.
