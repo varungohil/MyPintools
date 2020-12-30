@@ -674,7 +674,7 @@ VOID Fini(INT32 code, VOID *v)
 
 INT32 Usage()
 {
-    cerr << "This tool counts the number of dynamic instructions executed" << endl;
+    cerr << "This tool counts the number of floating point multiplication instructions and reports their distribution." << endl;
     cerr << endl << KNOB_BASE::StringKnobSummary() << endl;
     return -1;
 }
