@@ -25,5 +25,7 @@ $(PIN_HOME)/pin -t $(PIN_HOME)/source/tools/pintools/obj-intel64/<tool-name>.so 
 After completion of execution, you can find the results in ```<tool-name>.out``` file in your current working directory.
 
 ## List of Pintools
-- fpmov: Counts the number of floating point MOV instructions performed by a workload.
-- fpmul: Counts the number of floating point multiplications (single precision and double precision) performed by a workload.
+- [fpmov](https://github.com/varungohil/MyPintools/blob/master/pintools/docs/fpmov.md): Counts the number of floating point MOV instructions performed by a workload.
+- [fpmul](https://github.com/varungohil/MyPintools/blob/master/pintools/docs/fpmul.md): Counts the number of floating point multiplications (single precision and double precision) performed by a workload.
+
+For more details on the tools, read the documents in the [docs folder](https://github.com/varungohil/MyPintools/tree/master/pintools/docs).
