@@ -18,7 +18,7 @@ make
 ```
 ## How to use?
 After building you can use the pintools in the same way any other pintool is used.
-For a 64 bit machine, the coomand would be as follows:
+For a 64 bit machine, the command would be as follows:
 ```bash
 $(PIN_HOME)/pin -t $(PIN_HOME)/source/tools/pintools/obj-intel64/<tool-name>.so -- <path_to_app>
 ```
