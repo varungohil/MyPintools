@@ -1,15 +1,3 @@
-/*
- * Copyright 2002-2019 Intel Corporation.
- * 
- * This software is provided to you as Sample Source Code as defined in the accompanying
- * End User License Agreement for the Intel(R) Software Development Products ("Agreement")
- * section 1.L.
- * 
- * This software and the related documents are provided as is, with no express or implied
- * warranties, other than those that are expressly stated in the License.
- */
-
-
 // Intel ISA Manual Ref. Link
 // https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-instruction-set-reference-manual-325383.pdf
 //Latest Ref: https://software.intel.com/en-us/download/intel-64-and-ia-32-architectures-sdm-combined-volumes-1-2a-2b-2c-2d-3a-3b-3c-3d-and-4
